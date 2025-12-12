@@ -15,61 +15,120 @@
         <a href="index.html" class="back-link"><i class="fas fa-arrow-right"></i> العودة للأقسام</a>
 
         <div class="lesson-content">
-            <h1>أساسيات لغة بايثون للمبتدئين</h1>
+            <h1 style="color: var(--python-neon);">المسار المتكامل: لغة بايثون (200+ درس)</h1>
 
-            <div class="lesson-block">
-                <h3>1. مقدمة: لماذا بايثون؟</h3>
-                <p>بايثون هي لغة برمجة عالية المستوى وسهلة القراءة والتعلم، مما يجعلها مثالية للمبتدئين. تُستخدم في تطوير الويب، تحليل البيانات، والذكاء الاصطناعي.</p>
-                <p><strong>الميزة الأهم:</strong> بناء جملتها يشبه اللغة الإنجليزية، لذا يمكنك التركيز على المنطق وليس على القواعد الصعبة.</p>
-            </div>
-
-            <div class="lesson-block">
-                <h3>2. المتغيرات (Variables) وأنواع البيانات</h3>
-                <p>المتغير هو مجرد اسم يُطلق على مساحة لتخزين البيانات. بايثون تتعرف على النوع تلقائياً.</p>
-                <h4>مثال الكود:</h4>
-                <pre>
-# متغير نصي (String)
-my_name = "رضا كريتوس"
-
-# متغير رقمي صحيح (Integer)
-my_age = 25
-
-# متغير عشري (Float)
-pi_value = 3.14
-                </pre>
-            </div>
-
-            <div class="lesson-block">
-                <h3>3. أول دالة لك: دالة الطباعة (print)</h3>
-                <p>دالة <code>print()</code> هي الأداة الأساسية لإخراج البيانات وعرضها على الشاشة.</p>
-                <h4>مثال الكود:</h4>
-                <pre>
-print("مرحباً بكم في أكاديمية كريتوس!")
-print(my_name) # سيطبع "رضا كريتوس"
-                </pre>
-            </div>
-
-            <div class="lesson-block">
-                <h3>4. الجمل الشرطية (If, Elif, Else)</h3>
-                <p>تستخدم لاتخاذ قرارات في الكود. إذا تحقق شرط، نفّذ شيئاً، وإلا فافعل شيئاً آخر.</p>
-                <h4>مثال الكود:</h4>
-                <pre>
-current_score = 95
-
-if current_score >= 90:
-    print("درجة ممتازة!")
-elif current_score >= 80:
-    print("درجة جيدة جداً.")
-else:
-    print("تحتاج إلى المزيد من الدراسة.")
-                </pre>
+            <div class="chapter-list lesson-block" id="toc">
+                <h3 style="border-bottom: none;">جدول المحتويات (انقر للتنقل)</h3>
+                <ul class="toc-list" id="chapter-links">
+                    </ul>
             </div>
             
+            <section id="lessons-container">
+                
+                <div class="lesson-block lesson-chapter" id="chapter-1">
+                    <h3 class="chapter-title">الفصل 1: المتغيرات الأساسية (الدروس 1-10)</h3>
+                </div>
+                
+                <div class="lesson-block lesson-unit" id="lesson-1-1">
+                    <h4>الدرس 1.1: تعريف المتغيرات وأنواعها</h4>
+                    <p>تعلم كيف تعطي اسماً لمساحة تخزين البيانات في بايثون، والفرق بين الأرقام الصحيحة والنصوص.</p>
+                    <h5>مثال الكود:</h5>
+                    <pre class="python-code">
+name = "Kratos" # نوع نصي (String)
+age = 30       # نوع رقمي صحيح (Integer)
+is_hacker = True # نوع منطقي (Boolean)
+                    </pre>
+                </div>
+                
+                <div class="lesson-block lesson-unit" id="lesson-1-2">
+                    <h4>الدرس 1.2: قواعد تسمية المتغيرات</h4>
+                    <p>المتغيرات لا يمكن أن تبدأ برقم ولا تحتوي على مسافات، ويُفضل استخدام صيغة <code>snake_case</code>.</p>
+                    <h5>مثال الكود:</h5>
+                    <pre class="python-code">
+user_name = "Rida" # صحيح ومفضل
+1st_name = "Error" # خطأ! لا تبدأ برقم
+                    </pre>
+                </div>
+                
+                <div class="lesson-block lesson-chapter" id="chapter-2">
+                    <h3 class="chapter-title">الفصل 2: الجمل الشرطية (الدروس 11-20)</h3>
+                </div>
+                
+                <div class="lesson-block lesson-unit" id="lesson-2-1">
+                    <h4>الدرس 2.1: دالة If و Else</h4>
+                    <p>الأساس في اتخاذ القرارات. إذا تحقق شرط، نفذ، وإلا فافعل شيئاً آخر.</p>
+                    <h5>مثال الكود:</h5>
+                    <pre class="python-code">
+score = 75
+if score > 70:
+    print("ناجح")
+else:
+    print("راسب")
+                    </pre>
+                </div>
+                
+                <div class="lesson-block lesson-chapter" id="chapter-3">
+                    <h3 class="chapter-title">الفصل 3: حلقات التكرار (الدروس 21-30)</h3>
+                </div>
+                
+                <div class="lesson-block lesson-unit" id="lesson-3-1">
+                    <h4>الدرس 3.1: حلقة For (For Loop)</h4>
+                    <p>تستخدم لتكرار عملية معينة لعدد محدد من المرات أو على عناصر قائمة.</p>
+                    <h5>مثال الكود:</h5>
+                    <pre class="python-code">
+for i in range(5):
+    print(i) # سيطبع الأرقام من 0 إلى 4
+                    </pre>
+                </div>
+                
+                </section>
         </div>
 
         <footer class="app-footer">
             <p>جميع الحقوق محفوظة لـ KRATOS ACADEMY</p>
         </footer>
     </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const lessonsContainer = document.getElementById('lessons-container');
+            const chapterLinks = document.getElementById('chapter-links');
+            const chapters = lessonsContainer.querySelectorAll('.lesson-chapter');
+
+            chapters.forEach((chapter, index) => {
+                const chapterTitle = chapter.querySelector('.chapter-title').textContent;
+                const chapterId = chapter.id;
+
+                // إنشاء رابط للفصل في جدول المحتويات
+                const li = document.createElement('li');
+                const a = document.createElement('a');
+                a.href = `#${chapterId}`;
+                a.textContent = chapterTitle;
+                li.appendChild(a);
+                chapterLinks.appendChild(li);
+
+                // إضافة جميع الدروس تحت هذا الفصل في الجدول
+                let nextElement = chapter.nextElementSibling;
+                let lessonCounter = 0;
+                while (nextElement && !nextElement.classList.contains('lesson-chapter')) {
+                    if (nextElement.classList.contains('lesson-unit')) {
+                        lessonCounter++;
+                        const lessonTitle = nextElement.querySelector('h4').textContent;
+                        const lessonId = nextElement.id;
+                        
+                        const lessonLi = document.createElement('li');
+                        lessonLi.classList.add('lesson-sub-link');
+                        const lessonA = document.createElement('a');
+                        lessonA.href = `#${lessonId}`;
+                        lessonA.textContent = lessonTitle;
+                        lessonLi.appendChild(lessonA);
+                        chapterLinks.appendChild(lessonLi);
+                    }
+                    nextElement = nextElement.nextElementSibling;
+                }
+            });
+        });
+    </script>
+
 </body>
 </html>
